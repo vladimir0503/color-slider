@@ -20,7 +20,7 @@ $(() => {
             green = $("#green").slider("value"),
             blue = $("#blue").slider("value"),
             hex = hexFromRGB(red, green, blue);
-        $("#swatch").css(currentPropElem, "#" + hex);
+        $("#swatch").css(currentPropElem, `#${hex}`);
         activeBtn();
     };
 
